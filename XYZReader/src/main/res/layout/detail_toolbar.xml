@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CollapsingToolbarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detail_toolbarLayout"
+    app:title=""
+    app:titleEnabled="false"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    >
+
+    <include layout="@layout/detail_photobar" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:id="@+id/detail_toolbar"
+
+       />
+</CollapsingToolbarLayout>

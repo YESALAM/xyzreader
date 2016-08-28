@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_app_bar"
+        android:elevation="4dp"
+        >        
+        
+        <include layout="@layout/detail_toolbar" />
+        
+        <include layout="@layout/detail_heading" />
+        
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/detail_article" />
+    
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_share"
+        android:contentDescription="@string/fab_string"
+        android:id="@+id/detail_fab"
+        android:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@id/detail_app_bar"
+
+        />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
